@@ -1,0 +1,13 @@
+# Ignore all PDF files
+*.pdf
+
+# Ignore all image files (JPEG, PNG)
+*.jpg
+*.jpeg
+*.png
+*.pdf
+*.txt
+*.pptx
+
+# Ignore a specific folder (if you store images in a directory)
+pdf_pages/
