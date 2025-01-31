@@ -12,14 +12,13 @@ from tkinter import filedialog, messagebox, ttk
 pytesseract.pytesseract.tesseract_cmd = r'C:/Program Files/Tesseract-OCR/tesseract.exe'
 
 # Function to process images for OCR
-def preprocess_image(image_path):
-    img = cv2.imread(image_path)
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+def preprocess_image(image):
+    gray = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2GRAY)
     return gray
 
 # Function to extract text from an image
-def extract_text_from_image(image_path):
-    processed_img = preprocess_image(image_path)
+def extract_text_from_image(image):
+    processed_img = preprocess_image(image)
     text = pytesseract.image_to_string(processed_img)
     return text
 
@@ -38,12 +37,9 @@ def pdf_to_text(pdf_path, progress_var, progress_label, start_button):
 
     # Convert PDF to images
     images = convert_from_path(pdf_path, dpi=300, poppler_path=poppler_path)
-    
-    # Create output directory
-    output_dir = "pdf_pages"
-    os.makedirs(output_dir, exist_ok=True)
 
-    extracted_text = ""
+    # extracted_text = ""
+    extracted_text_list = []
 
     # Update progress UI
     total_pages = len(images)
@@ -52,12 +48,12 @@ def pdf_to_text(pdf_path, progress_var, progress_label, start_button):
 
     # Process pages
     for i, image in enumerate(images):
-        image_path = os.path.join(output_dir, f"page_{i+1}.jpg")
-        image.save(image_path, "JPEG")
+        # image_path = os.path.join(output_dir, f"page_{i+1}.jpg")
+        # image.save(image_path, "JPEG")  # Commented out to avoid saving images
 
         # Extract text from the image
-        page_text = extract_text_from_image(image_path)
-        extracted_text += f"\n\n--- Page {i+1} ---\n\n{page_text}"
+        page_text = extract_text_from_image(image)
+        extracted_text_list.append(f"\n\n--- Page {i+1} ---\n\n{page_text}")
 
         # Update progress bar
         progress_var.set((i + 1) / total_pages * 100)
@@ -66,12 +62,12 @@ def pdf_to_text(pdf_path, progress_var, progress_label, start_button):
 
     # Save extracted text to a file
     with open(output_text_file, "w", encoding="utf-8") as f:
-        f.write(extracted_text)
+        f.write("".join(extracted_text_list))
 
-    # Delete temporary images
-    for image_file in os.listdir(output_dir):
-        os.remove(os.path.join(output_dir, image_file))
-    os.rmdir(output_dir)
+    # # Delete temporary images (Commented out since images are not saved)
+    # for image_file in os.listdir(output_dir):
+    #     os.remove(os.path.join(output_dir, image_file))
+    # os.rmdir(output_dir)
 
     # Show completion message
     messagebox.showinfo("Success", f"Text extracted and saved as: {output_text_file}")

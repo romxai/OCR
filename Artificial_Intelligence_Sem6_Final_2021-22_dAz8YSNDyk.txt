@@ -1,0 +1,154 @@
+
+
+--- Page 1 ---
+
+>
+
+“
+
+SVKM’s NMIMS
+MUKESH PATEL SCHOOL OF TECHNOLOGY MANAGEMENT & ENGINEERING /
+
+SCHOOL OF TECHNOLOGY MANAGEMENT & ENGINEERING
+
+Academic Year: 2021-22
+
+Programme: B.Tech / MBA Tech (Computer) Year: III - Semester: VI
+Subject: Artificial Intelligence
+Marks: 100
+Date: 06 April 2022 Time: 10.00 am to 1.00 pm
+* Durations: 3 (hrs)
+No. of Pages:
+
+Final Examination
+
+Instructions: Candidates should read carefully the instructions printed on the question paper and on the cover
+of the Answer Book, which is provided for their use. :
+
+1) Question No. _1___ is compulsory.
+
+2) Out of remaining questions, attempt any _ 4 questions.
+
+3) In all _5_ questions to be attempted.
+
+4) All questions carry equal marks.
+
+5) Answer to each new question to be started on a fresh page.
+
+6) Figures in brackets on the right hand side indicate full marks.
+7) Assume Suitable data if necessary.
+
+kK | |
+
+Answer briefly: [20]
+CO-2; a Discuss the algorithms of Depth limited search and uniform cost search with [05]
+Og | suitable examples.
+
+b For each of the following activities, give a PEAS description of the task
+
+environment:
+CO-1; 1. Shopping for used books on e-commerce site. [05]
+SO-2; 2. Playing a basketball match
+BL-H 3. Practicing tennis against a wall.
+
+4. Performing a high jump.
+
+| 5. Bidding on an item at an auction.
+CO-3; C. } }
+SO-1; Explain unification algorithm with suitable example? [05]
+BL-M | |
+CO-4; d. Differentiate between robots and Al programs. Explain various components [05] |
+oo of robots? .
+Q2 a. | For each of the following assertions, say whether it is true or false and [10]
+
+___| support your answer with examples or counterexamples where appropriate.
+
+I]
+
+
+--- Page 2 ---
+
+bd
+
+BL-M
+
+A) An agent that senses only partial information about the state cannot be
+
+perfectly rational.
+
+B) There exist task environments in which no pure reflex agent can behave
+
+rationally.
+
+C) There exists a task environment in which every agent is rational.
+D) The input to an agent program is the same as the input to the agent
+function.
+
+E) Every agent function is implementable by some program/machine
+
+combination.
+
+BE
+
+b. | Why A* search technique is called the Informed search technique. Also
+solve the following problem by A* Search Method.
+Q2
+CO-2; [10]
+SO-1;
+BL-M
+'Q3 Ta |
+C03 "| Write a note on backward chaining with example. What are the drawbacks 10]
+SO. 1 ; of Forward chaining and Backward chaining? Explain with example?
+BL-M
+Q3 b. |
+CO-4; Explain constraint propagation using intelligent backtracking with an [10]
+SO-1; example?
+BL-M
+
+V2
+
+
+
+--- Page 3 ---
+
+Q4 What is decision Tree? List down the attribute selection measures used in
+
+a. | Write the difference between Breadth first search and depth first search
+
+technique. Why these technique called as uninformed search. Also solve
+
+the following problem by Breadth first search technique.
+
+Write a note on self-driving car. Describe the complete method of auto
+
+SO-6;
+BL-M
+
+driving.
+
+aay decision tree classification. Illustrate decision tree algorithm with an [10]
+BL-M suitable example.
+
+Q4 b .
+
+CO-3- What are the different characteristics of expert system? Explain rule based
+
+SO-1; expert system?
+
+BL-M -
+
+Q5 a.
+
+CO-4- Discuss the steps involved in NLP. Write implementation aspect of 10
+SO-6; syntactic analysis. . L10]
+BL-M
+
+Q5 b.
+
+C0, Analyze K-means algorithm with a suitable example. [10]
+BL-H
+
+[10]
+
+Ys
+
